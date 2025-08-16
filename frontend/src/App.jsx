@@ -23,7 +23,7 @@ import {
 import { HiSparkles } from "react-icons/hi";
 import "./App.css";
 
-const API_BASE_URL = "http://localhost:3001/api";
+const API_BASE_URL = "https://ai-summarizer-backend-six.vercel.app/api";
 
 function App() {
   const [transcript, setTranscript] = useState("");
