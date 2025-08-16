@@ -46,6 +46,12 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "OK", message: "Server is running" });
 });
 
+
+
+app.get("/", (req, res) => {
+  res.send("Welcome to Khadar's AI Meeting Notes Summarizer API");
+});
+
 // Generate summary using Groq AI
 app.post("/api/summarize", async (req, res) => {
   try {
